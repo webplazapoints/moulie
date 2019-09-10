@@ -2518,7 +2518,7 @@ header .icon-entry .text b {
 		line-height: inherit;
 		display: block;
 		font-size: 25px;
-		color: #00316B;
+		color: #7184A4;
 	}
 
 	body.opened-menu {
@@ -2581,7 +2581,7 @@ header .icon-entry .text b {
 	}
 	.logo-responsive img {
 		padding: 10px 0;
-		height: 55px;
+		height: 80px;
 	}
 
 	.nav-overflow .col-md-4 {
@@ -13965,5 +13965,5 @@ p.result {
 .nav-overflow nav ul li:nth-last-of-type(6),
 .nav-overflow nav ul li:nth-last-of-type(7),
 .nav-overflow nav ul li:nth-last-of-type(8) {
-	display: none;
+	display: none!important;
 }
