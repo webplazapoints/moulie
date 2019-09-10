@@ -1,0 +1,70 @@
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tilt__back {
+	position: relative;
+}
+
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.grid--examples .grid__img {
+	position: relative;
+	height: 0;
+	padding-bottom: 66.714%;
+	overflow: hidden;
+}
+
+.grid--examples .tilt {
+	position: absolute;
+	top: 0;
+}
+
+.grid__img--example-2::after {
+	content: '';
+	position: absolute;
+	box-shadow: inset 0 0 50px 30px rgba(2,0,37,0.8);
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.grid__img--example-3 .tilt {
+	-webkit-filter: grayscale(100%) brightness(105%) contrast(120%);
+	filter: grayscale(100%) brightness(105%) contrast(120%);
+	-webkit-transition: filter 0.5s, -webkit-filter 0.5s;
+	transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.grid__img--example-3 .tilt:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+
+.grid__img--example-4 .tilt {
+	width: 120%;
+	height: 120%;
+	top: -10%;
+	left: -10%;
+}
